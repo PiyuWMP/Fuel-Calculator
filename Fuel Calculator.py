@@ -1,27 +1,21 @@
 uname = input("User name :")
-UVehicalType = int(input("User Vehicle Type 1- Car, 2- Bike, 3-SUV :"))
-VFTCapacity = int(input("Vehicle Fuel Tank Capacity (L) :"))
-Fuel_Type = int(input("Fuel Type 1- 92 Petrol, 2- 95 Petrol, 3- Super Diesel :"))
-Fuel_Price = int(input("Fuel Price (Per L) :"))
-PMeterR = float(input("Previous Meter Reading (Km) :"))
-CMeterR = float(input("Current Meter Reading (Km) :"))
-HMFP = float(input("How many Fuel you pumped Now (L) :"))
-YoN = input("Confirm or No (y- Confirm, n-No) :")
-if(YoN=="y"):
-	print("hi ",uname )
-	print("Previous Meter reading :",PMeterR)
-	print("Current Meter Reading :",CMeterR )
-	print("Pumped Fuel Type :",Fuel_Type)
-	print("Fuel Price (Per 1 L) :",Fuel_Price)
+u_vehicle_type = int(input("User Vehicle Type 1- Car, 2- Bike, 3-SUV :"))
+v_f_t_capacity = int(input("Vehicle Fuel Tank Capacity (L)"))
+fuel_type = int(input("Fuel Type 1- 92 Petrol, 2- 95 Petrol, 3- Super Diesel :"))
+fuel_price = int(input("Fuel Price (Per L)"))
+p_meter_r = float(input("Previous Meter Reading (Km) :"))
+c_meter_r = float(input("Current Meter Reading (Km) :"))
+h_m_f_p = float(input("How many Fuel you pumped Now (L) :"))
+yon = input("Confirm or No (y- Confirm, n-No) :")
+if(yon=="y"):
+    print("hi ",uname )
+    print("Previous Meter reading :",p_meter_r)
+    print("Current Meter Reading :",c_meter_r)
+    print("Pumped Fuel Type :",fuel_type)
+    print("Fuel Price (Per 1 L) :",fuel_price)
 
-	Total_Price = (CMeterR-PMeterR)*Fuel_Price
-	print("Total Price :",Total_Price)
-
-	Fuel_Efficiency = (CMeterR-PMeterR)/HMFP
-	print("Fuel Efficiency (Per 1L): ",str(Fuel_Efficiency )+"Km")
-
-	Cost = (Fuel_Efficiency)*Fuel_Price
-	print("Cost (Per 1L) :",Cost)
+    total_price = (c_meter_r-p_meter_r)*fuel_price
+    print("Total Price :",total_price)
 
 
 
