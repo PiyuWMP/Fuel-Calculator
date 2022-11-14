@@ -17,7 +17,17 @@ if(yon=="y"):
     total_price = (c_meter_r-p_meter_r)*fuel_price
     print("Total Price :",total_price)
 
+    fuel_efficiency = (c_meter_r-p_meter_r)/h_m_f_p
+    print("Total Price :",fuel_efficiency)
+
+    cost = (fuel_efficiency)*fuel_price
+    print("Cost (Per 1L) :",cost)
+
+if yon=="n":
+    print("not calculated")
+else:
+    print("syntax error")
+
+input()
 
 
-
-	
