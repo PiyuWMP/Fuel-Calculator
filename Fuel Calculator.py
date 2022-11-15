@@ -20,7 +20,7 @@ if(yon=="y"):
     fuel_efficiency = (c_meter_r-p_meter_r)/h_m_f_p
     print("Total Price :",fuel_efficiency)
 
-    cost = (fuel_efficiency)*fuel_price
+    cost = (h_m_f_p)*fuel_price
     print("Cost (Per 1L) :",cost)
 
 if yon=="n":
